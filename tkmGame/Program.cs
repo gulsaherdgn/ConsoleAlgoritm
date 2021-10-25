@@ -11,17 +11,17 @@ namespace tkmGame
         static void Main(string[] args)
         {
             Random random = new Random();
-            Console.WriteLine("taş   için '1'");
-            Console.WriteLine("kağıt için '2'");
-            Console.WriteLine("makas için '3'");
-
-            int userPuan = 0;
-            int pcPuan = 0;
-
-
-            while (true)
-            {
-                if (pcPuan == 2 || userPuan == 2)
+            Console.WriteLine("taş   için '1' degerini giriniz ");
+            Console.WriteLine("kağıt için '2' degerini giriniz ");
+            Console.WriteLine("makas için '3' degerini giriniz ");
+                                                               
+            int userPuan = 0;                                  
+            int pcPuan = 0;                                    
+                                                               
+                                                               
+            while (true)                                       
+            {                                                  
+                if (pcPuan == 2 || userPuan == 2)              
                 {
                     break;
                 }
@@ -32,7 +32,7 @@ namespace tkmGame
                     int pc = random.Next(1, 4);
                     Console.WriteLine("pc :  {0} ", pc);
 
-                    switch (pc)
+                    switch (pc) 
                     {
 
                         case 1:
